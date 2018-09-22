@@ -3,8 +3,8 @@ package model;
 public class Comic {
 	
 	private String name;
-	private int editionNumber;
-	private int expeditionYear;
+	private int editionNumber = 0;
+	private int expeditionYear = 0;
 	private String company;
 	private String picture;
 

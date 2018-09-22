@@ -3,7 +3,7 @@ package model;
 public class Movies {
 	
 	private String name;
-	private int year;
+	private int year = 0;
 	private String company;
 	private String director;
 	private String country;
