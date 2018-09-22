@@ -2,6 +2,8 @@ package model;
 
 import java.util.ArrayList;
 
+import javax.swing.JOptionPane;
+
 public class Principal {
 
 	private ArrayList<Movies> movies;
@@ -43,6 +45,18 @@ public class Principal {
 
 		return findName;
 
+	}
+	public void addComic(String name, int editionNumber, int expeditionYear, String company, String picture) {
+		boolean comic = searchComic(name);
+		
+		if(comic == false) {
+			try {
+			Comic addcomic = new Comic(name, editionNumber, expeditionYear, company, picture);
+			}catch (Exception e) {
+				// TODO: handle exception
+			}
+		}
+		
 	}
 
 }
